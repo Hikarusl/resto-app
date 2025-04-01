@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter24pt-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter24pt-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter24pt-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter24pt-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  overflow-x: auto;
+  padding: 0;
+  margin: 0;
+
+}
+p, h1, h2, h3{
+  margin-block: 0;
+}
+.link {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none; 
+  color: inherit;
+  display: inline-flex;
+}
+link:hover,
+link:focus {
+    color: black; 
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+.container {
+  padding-inline: calc((100vw - 1312px)/2);
+
+}
+
+.header {
+  background-image: linear-gradient(to right, #FEDD2C, #F9C201);
+  color: #555555; 
+  padding-block: 16px;
+}
+
+.header__inner {
+  display: flex;
+  flex-direction: row;
+  text-align: center; 
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.header__list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+  list-style-type: none; 
+  padding-left: 0; 
+  font-weight: 600;
+  font-size: 16px;
+}
+
+
+.menu {
+  padding-block: 32px;
+}
+.menu__title {
+  padding-bottom: 32px;
+}
+
+.menu__body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 32px;
+} 
+
+.menu__item-img {
+  display: block;
+  border-radius: 16px;
+  background-color: linear-gradient( #000000 0%, #000000 50%);
+}
+.menu__item {
+  position: relative; 
+  display: inline-block; 
+}
+
+.menu__item p {
+  position: absolute; 
+  bottom: 16px; 
+  left: 16px;  
+  color: rgb(255, 255, 255); /* Цвет текста */
+  font-size: 24px; 
+  font-weight: 600;
+  z-index: 1;
+}
+.menu__item::before { /* Используем псевдоэлемент для наложения градиента */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); 
+  border-radius: 16px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+
+
+
+
