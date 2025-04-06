@@ -7,7 +7,15 @@
   <title>Resto App</title>
 </head>
 <body>
-  <header class="header ">
+  <header class="header">
+    <div class="header__bubble">
+      <span class="header__bubble-text">Бесплатная доставка от 1 000 ₽</span>
+      <button class="header__bubble-button"  title="Закрыть" type="button">
+        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.29817 7.35869C6.59106 7.65159 7.06594 7.65159 7.35883 7.35869C7.65172 7.0658 7.65172 6.59093 7.35883 6.29803L5.06079 3.99999L7.35882 1.70197C7.65171 1.40908 7.65171 0.934204 7.35882 0.64131C7.06592 0.348417 6.59105 0.348417 6.29816 0.64131L4.00013 2.93933L1.70198 0.641179C1.40908 0.348285 0.934209 0.348286 0.641316 0.641179C0.348422 0.934072 0.348422 1.40895 0.641316 1.70184L2.93947 3.99999L0.641301 6.29816C0.348408 6.59106 0.348408 7.06593 0.641301 7.35882C0.934194 7.65172 1.40907 7.65172 1.70196 7.35882L4.00013 5.06065L6.29817 7.35869Z" fill="white"/>
+        </svg>
+      </button>
+    </div>
     <div class="header__inner container">  
         <svg 
         class="header__logo"
@@ -29,25 +37,41 @@
       <nav class="header__menu">
         <ul class="header__list">
           <li class="header__item">
-            <a href="/">Меню</a>
+            <a class="header__item-link" href="/">Меню</a>
           </li>
           <li class="header__item">
-            <a href="/">Акции</a>
+            <a class="header__item-link" href="/">Акции</a>
           </li>
           <li class="header__item">
-            <a href="/">О нас</a>
+            <a class="header__item-link" href="/">О нас</a>
           </li>
           <li class="header__item">
-            <a href="/">События</a>
+            <a class="header__item-link" href="/">События</a>
           </li>
           <li class="header__item">
-            <a href="/">Зоны доставки</a>
+            <a class="header__item-link" href="/">Зоны доставки</a>
           </li>
         </ul>
       </nav>
-      <div class="header__contacts">
-        <a class="tel-link" href="tel:+01234567890">+0 (123) 456 78-90</a>
-        <p class="header__contacts-info">Прием заказов с <time datetime="10:00">10:00</time> до <time datetime="22:40">22:40</time></p>
+      <div class="header__right">
+        <div class="header__contacts">
+          <a class="tel-link" href="tel:+01234567890">+0 (123) 456 78-90</a>
+          <p class="header__contacts-info">Прием заказов с <time datetime="10:00">10:00</time> до <time datetime="22:40">22:40</time></p>
+        </div>
+        <div class="header__right-buttons">
+          <a class="header__button button-transparent" href="/" aria-label="Профиль" title="Профиль">
+            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00002 1.85002C6.26033 1.85002 4.85002 3.26033 4.85002 5.00002C4.85002 6.73972 6.26033 8.15002 8.00002 8.15002C9.73972 8.15002 11.15 6.73972 11.15 5.00002C11.15 3.26033 9.73972 1.85002 8.00002 1.85002ZM3.15002 5.00002C3.15002 2.32144 5.32144 0.150024 8.00002 0.150024C10.6786 0.150024 12.85 2.32144 12.85 5.00002C12.85 7.67861 10.6786 9.85003 8.00002 9.85003C5.32144 9.85003 3.15002 7.67861 3.15002 5.00002ZM3.43041 13.7854C2.25402 14.3736 1.85002 15.0289 1.85002 15.5C1.85002 15.9711 2.25402 16.6264 3.43041 17.2146C4.55596 17.7774 6.17037 18.15 8.00002 18.15C9.82968 18.15 11.4441 17.7774 12.5696 17.2146C13.746 16.6264 14.15 15.9711 14.15 15.5C14.15 15.0289 13.746 14.3736 12.5696 13.7854C11.4441 13.2226 9.82968 12.85 8.00002 12.85C6.17037 12.85 4.55596 13.2226 3.43041 13.7854ZM2.67015 12.2649C4.0781 11.5609 5.96368 11.15 8.00002 11.15C10.0364 11.15 11.922 11.5609 13.3299 12.2649C14.687 12.9434 15.85 14.0381 15.85 15.5C15.85 16.9619 14.687 18.0566 13.3299 18.7352C11.922 19.4391 10.0364 19.85 8.00002 19.85C5.96368 19.85 4.0781 19.4391 2.67015 18.7352C1.31304 18.0566 0.150024 16.9619 0.150024 15.5C0.150024 14.0381 1.31304 12.9434 2.67015 12.2649Z" fill="#1C1C1C"/>
+              </svg>
+          </a>
+          <a class="header__button" href="/" aria-label="Корзина" title="Корзина">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.0343 3.05767C16.8234 2.80451 16.5593 2.6009 16.2607 2.4613C15.9622 2.3217 15.6367 2.24954 15.3071 2.24994H3.18142L3.14992 1.9867C3.08546 1.43953 2.82247 0.935026 2.41081 0.568844C1.99915 0.202662 1.46743 0.000256339 0.916477 0L0.749981 0C0.551074 0 0.360313 0.0790157 0.219664 0.219664C0.0790157 0.360313 0 0.551074 0 0.749981C0 0.948889 0.0790157 1.13965 0.219664 1.2803C0.360313 1.42095 0.551074 1.49996 0.749981 1.49996H0.916477C1.10017 1.49999 1.27747 1.56743 1.41474 1.68949C1.55202 1.81156 1.63972 1.97976 1.66121 2.1622L2.69318 10.937C2.80032 11.8495 3.23878 12.691 3.92533 13.3017C4.61189 13.9123 5.49875 14.2497 6.41759 14.2496H14.2496C14.4485 14.2496 14.6393 14.1706 14.78 14.03C14.9206 13.8893 14.9996 13.6986 14.9996 13.4997C14.9996 13.3008 14.9206 13.11 14.78 12.9693C14.6393 12.8287 14.4485 12.7497 14.2496 12.7497H6.41759C5.95339 12.7484 5.50096 12.6035 5.12232 12.335C4.74368 12.0664 4.45737 11.6874 4.30264 11.2497H13.2424C14.1216 11.2498 14.9729 10.9409 15.6475 10.3771C16.3221 9.81324 16.7771 9.0303 16.9331 8.16504L17.5218 4.89963C17.5806 4.57564 17.5674 4.24269 17.4831 3.92438C17.3989 3.60607 17.2457 3.31017 17.0343 3.05767ZM16.0496 4.63338L15.4601 7.8988C15.3665 8.41854 15.093 8.88877 14.6875 9.22717C14.2821 9.56556 13.7705 9.75056 13.2424 9.74975H4.06415L3.35842 3.74991H15.3071C15.4173 3.74925 15.5263 3.77287 15.6263 3.8191C15.7263 3.86532 15.8149 3.93301 15.8857 4.01735C15.9566 4.1017 16.0081 4.20062 16.0364 4.30709C16.0647 4.41357 16.0692 4.52497 16.0496 4.63338Z" fill="white"/>
+              <path d="M5.24996 18C6.07836 18 6.74992 17.3285 6.74992 16.5001C6.74992 15.6717 6.07836 15.0001 5.24996 15.0001C4.42155 15.0001 3.75 15.6717 3.75 16.5001C3.75 17.3285 4.42155 18 5.24996 18Z" fill="white"/>
+              <path d="M12.7497 18C13.5781 18 14.2496 17.3285 14.2496 16.5001C14.2496 15.6717 13.5781 15.0001 12.7497 15.0001C11.9212 15.0001 11.2497 15.6717 11.2497 16.5001C11.2497 17.3285 11.9212 18 12.7497 18Z" fill="white"/>
+              </svg>
+          </a>
+        </div>
       </div>
     </div>
   </header>
@@ -59,45 +83,210 @@
       </h2>
       <div class="menu__body">
         <ul class="menu__list">
-          <li class="menu__item">
+          <li class="menu__item">           
             <a href="/" class="menu__item-link">
-              <img class="menu__item-img"
-              src="./images/image-01.png" alt="Пицца"
-              width="304" height="304" loading="lazy"
-              >
-              <h3>Пицца</h3>
+              <div class="menu__img-wrapper">
+                <img class="menu__item-img" src="./images/image-01.png" alt="Пицца" width="304" height="304" loading="lazy">
+                <div class="menu__gradient-overlay"></div>
+              </div>
+              <h3 class="menu__item-title">Пицца</h3>
+            </a>
+          </li>
+          <li class="menu__item">           
+            <a href="/" class="menu__item-link">
+              <div class="menu__img-wrapper">
+                <img class="menu__item-img" src="./images/image-02.png" alt="Супы" width="304" height="304" loading="lazy">
+                <div class="menu__gradient-overlay"></div>
+              </div>
+              <h3 class="menu__item-title">Супы</h3>
             </a>
           </li>
           <li class="menu__item">
             <a href="/" class="menu__item-link">
-              <img class="menu__item-img"
-              src="./images/image-02.png" alt="Супы"
-              width="304" height="304" loading="lazy"
-              >
-              <h3>Супы</h3>
-            </a>
+              <div class="menu__img-wrapper">
+                <img class="menu__item-img" src="./images/image-03.png" alt="Горячие блюда" width="304" height="304" loading="lazy">
+                <div class="menu__gradient-overlay"></div>
+              </div>
+              <h3 class="menu__item-title">Горячие блюда</h3>
+            </a>            
           </li>
           <li class="menu__item">
             <a href="/" class="menu__item-link">
-              <img class="menu__item-img"
-              src="./images/image-03.png" alt="Горячие блюда"
-              width="304" height="304" loading="lazy"
-              >
-              <h3>Горячие блюда</h3>
-            </a>
-          </li>
-          <li class="menu__item">
-            <a href="/" class="menu__item-link">
-              <img class="menu__item-img"
-              src="./images/image-04.png" alt="Салаты"
-              width="304" height="304" loading="lazy"
-              >
-              <h3>Салаты</h3>
-            </a>
+              <div class="menu__img-wrapper">
+                <img class="menu__item-img" src="./images/image-04.png" alt="Салаты" width="304" height="304" loading="lazy">
+                <div class="menu__gradient-overlay"></div>
+              </div>
+              <h3 class="menu__item-title">Салаты</h3>
+            </a>           
           </li>
         </ul>
       </div>
     </section>
+    <section class="product_section container">
+      <h2 class="news__title">
+        Новинки
+      </h2>
+      <div class="news__body">
+        <ul class="product-list">          
+          <li class="product-item">
+            <a href="#" class="product-link">
+              <div class="product-description">
+                <div class="descroption-icon icon--vegan">
+                  <img src="./images/icons/dishes_description/vegan.svg" alt="Веганское">
+                </div> 
+              </div>
+              <img src="./images/dish/egg-soup.jpg" alt="" class="product__image"
+                width="304" height="304" loading="lazy">            
+              <h4 class="product__title">Китайский яичный суп</h4>
+              <div class="product__info">
+                <p>Традиционный китайский суп с яйцом и томатами черри</p>
+              </div>
+            </a>
+            <button class="price-button" title="Добавить в корзину">
+              <span class="button-price">350</span>
+              <span class="button-currency">₽</span>
+            </button>
+          </li>
+          <li class="product-item">
+            <a href="#" class="product-link">
+              <div class="product-description">
+                <div class="descroption-icon icon--vegan">
+                  <img src="./images/icons/dishes_description/vegan.svg" alt="Веганское">
+                </div>  
+              </div>
+              <img src="./images/dish/paella.jpg" alt="" class="product__image"
+                width="304" height="304" loading="lazy">            
+              <h4 class="product__title">Паэлья</h4>
+              <div class="product__info">
+                <p>Традиционное испанское блюдо — рис, колбаски чоризо, куриное бедро, кальмар, кукуруза, горошек, специи</p>
+              </div>
+            </a>
+            <button class="price-button" title="Добавить в корзину">
+              <span class="button-price">660</span>
+              <span class="button-currency">₽</span>
+            </button>
+          </li>
+          <li class="product-item">
+            <a href="#" class="product-link">
+              <div class="product-description">
+              </div>
+              <img src="./images/dish/boeuf.jpg" alt="" class="product__image"
+                width="304" height="304" loading="lazy">            
+              <h4 class="product__title">Биф Бургеньон</h4>
+              <div class="product__info">
+                <p>Блюдо французской кухни — тушёные кусочки говядины с картофелем и болгарским перцем</p>
+              </div>
+            </a>
+            <button class="price-button" title="Добавить в корзину">
+              <span class="button-price">630</span>
+              <span class="button-currency">₽</span>
+            </button>
+          </li>
+          <li class="product-item">
+            <a href="#" class="product-link">
+              <div class="product-description">
+                <div class="descroption-icon icon--vegan">
+                  <img src="./images/icons/dishes_description/vegan.svg" alt="Веганское">
+                </div>     
+              </div>
+              <img src="./images/dish/broken-cucumbers.jpg" alt="" class="product__image"
+                width="304" height="304" loading="lazy">            
+              <h4 class="product__title">Битые огурцы</h4>
+              <div class="product__info">
+                <p>Салат из свежих битых огурцов с уйгурским соусом, кешью и кунжутом</p>
+              </div>
+            </a>
+            <button class="price-button" title="Добавить в корзину">
+              <span class="button-price">320</span>
+              <span class="button-currency">₽</span>
+            </button>
+          </li>
+        </ul>
+
+      </div> 
+    </section>
+    <section class="product_section container">
+      <h2 class="popular__title">
+        Популярное
+      </h2>
+      <div class="popular__body">
+        <ul class="product-list">          
+          <li class="product-item">
+            <a href="#" class="product-link">
+              <div class="product-description"></div>
+              <img src="./images/dish/peperoni.jpg" alt="" class="product__image"
+                width="304" height="304" loading="lazy">            
+              <h4 class="product__title">Пепперони</h4>
+              <div class="product__info">
+                <p>Просто и вкусно - томатная основа маринара, колбаски пепперони и сыр моцарелла</p>
+              </div>
+            </a>
+            <button class="price-button" title="Добавить в корзину">
+              <span class="button-price">660</span>
+              <span class="button-currency">₽</span>
+            </button>
+          </li>
+          <li class="product-item">
+            <a href="#" class="product-link">
+              <div class="product-description">
+                <div class="descroption-icon icon--vegan">
+                  <img src="./images/icons/dishes_description/vegan.svg" alt="Веганское">
+                </div>  
+              </div>
+              <img src="./images/dish/pear-gorgonzola.jpg" alt="" class="product__image"
+                width="304" height="304" loading="lazy">            
+              <h4 class="product__title">Груша Горгонзола</h4>
+              <div class="product__info">
+                <p>Нежная пицца на основе сливочного соуса с сыром горгондзола, грушей, медом и кедровыми орехами</p>
+              </div>
+            </a>
+            <button class="price-button" title="Добавить в корзину">
+              <span class="button-price">780</span>
+              <span class="button-currency">₽</span>
+            </button>
+          </li>
+          <li class="product-item">
+            <a href="#" class="product-link">
+              <div class="product-description">
+              </div>
+              <img src="./images/dish/fo-bo.jpg" alt="" class="product__image"
+                width="304" height="304" loading="lazy">            
+              <h4 class="product__title">Фо Бо</h4>
+              <div class="product__info">
+                <p>Вьетнамский суп с рисовой лапшой, в котором используется говядина, свежая зелень и ростки сои. Подают с добавками, такими как мята, долька лайма, острый соус шрирача, азиатский уксус и лаоганма</p>
+              </div>
+            </a>
+            <button class="price-button" title="Добавить в корзину">
+              <span class="button-price">490</span>
+              <span class="button-currency">₽</span>
+            </button>
+          </li>
+          <li class="product-item">
+            <a href="#" class="product-link">
+              <div class="product-description">
+                <div class="descroption-icon icon--sharp">
+                  <img src="./images/icons/dishes_description/sharp.svg" alt="Острое">
+                </div>
+                <div class="descroption-icon icon--sea">
+                  <img src="./images/icons/dishes_description/seafood.svg" alt="С морскими продуктами">
+                </div>   
+              </div>
+              <img src="./images/dish/tom-yum.jpg" alt="" class="product__image"
+                width="304" height="304" loading="lazy">            
+              <h4 class="product__title">Том Ям с морепродуктами</h4>
+              <div class="product__info">
+                <p>Традиционный тайский суп, на основе кокосового молока и сливок, с добавлением креветок, кальмаров, грибов шиитаке и шампиньонов, помидоров черри и свежей зелени. Подается с паровым тайским рисом</p>
+              </div>
+            </a>
+            <button class="price-button" title="Добавить в корзину">
+              <span class="button-price">590</span>
+              <span class="button-currency">₽</span>
+            </button>
+          </li>
+        </ul>
+      </div> 
+    </section>
+    
   </main>
 </body>
 </html>

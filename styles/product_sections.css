@@ -1,0 +1,7 @@
+.product_section {
+  padding-block: 32px;
+}
+.product-list {
+  display: flex;
+  column-gap: 32px;
+}

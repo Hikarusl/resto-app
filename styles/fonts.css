@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter24pt-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter24pt-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  margin-bottom: 32px;
+}
+
+h3 {
+  font-size: 24px; 
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 18px; 
+  font-weight: 600;
+  line-height: 24px;
+}

@@ -1,0 +1,97 @@
+.header {
+  font-weight: 600;
+  background-image: linear-gradient(to right, #FEDD2C, #F9C201);
+
+}
+
+.header__bubble {
+  background-color: #1C1C1C;
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  column-gap: 12px;
+  align-items: center;
+  height: 48px;
+}
+
+.header__bubble-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #393939; 
+  color: white; 
+}
+
+.header__inner {
+  display: flex;
+  text-align: center; 
+  justify-content: space-between;
+  align-items: center;
+  color: #555555; 
+  padding-block: 16px;
+  height: 80px;
+}
+
+.header__list {
+  display: flex;
+  column-gap: 24px;
+  list-style-type: none; 
+  padding-left: 0; 
+}
+
+.header__item-link {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.header__right {
+  display: flex;
+  column-gap: 64px;
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;   
+  text-align: right; 
+}
+
+.header__contacts-info {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.tel-link {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header__right-buttons {
+  display: flex;
+  column-gap: 16px;
+}
+
+.header__button{
+  width: 56px;
+  height: 48px;
+  border-radius: 16px;
+  background-color: #1C1C1C;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+.button-transparent {
+  background-color: transparent;
+  border: #1C1C1C solid 2px;
+  color: #1C1C1C;
+}
+

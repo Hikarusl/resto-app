@@ -1,16 +1,11 @@
 @import url(./styles/normalize.css);
+@import url(./styles/fonts.css);
+@import url(./styles/header.css);
+@import url(./styles/menu.css);
+@import url(./styles/product_card.css);
+@import url(./styles/product_sections.css);
 
-@font-face {
-  font-family: 'Inter';
-  src: url('./fonts/Inter24pt-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-}
 
-@font-face {
-  font-family: 'Inter';
-  src: url('./fonts/Inter24pt-Regular.woff2') format('woff2');
-  font-weight: 400;
-}
 
 html {
   min-width: 1440px;
@@ -28,114 +23,18 @@ html {
   clip: rect(0 0 0 0) !important;
   overflow: hidden !important;
 }
+
 body {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
   padding: 0;
   margin: 0;
-}
-
-a:hover,
-a:focus {
-    color: black; 
-}
-
-h2 {
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 1.3em;
-}
-
-h3 {
-  font-size: 24px; 
-  font-weight: 600;
 }
 
 .container {
   margin: 0 auto;
   width: 1312px;
-  padding-inline: 64px;
 }
 
-.header {
-  background-image: linear-gradient(to right, #FEDD2C, #F9C201);
-  color: #555555; 
-  padding-block: 16px;
-}
 
-.header__inner {
-  display: flex;
-  text-align: center; 
-  justify-content: space-between;
-  align-items: center;
-
-}
-
-.header__list {
-  display: flex;
-  column-gap: 24px;
-  list-style-type: none; 
-  padding-left: 0; 
-  font-weight: 600;
-  font-size: 16px;
-}
-
-.header__contacts {
-  display: flex;
-  flex-direction: column;
-}
-
-.tel-link {
-  font-size: 18px;
-  font-weight: 600;
-  text-align: right;
-}
-
-.menu {
-  padding-block: 32px;
-}
-
-.menu__title {
-  padding-bottom: 32px;
-}
-
-.menu__list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 32px;
-} 
-
-.menu__item-img {
-  display: block;
-  border-radius: 16px;
-  background-color: linear-gradient( #000000 0%, #000000 50%);
-}
-
-.menu__item {
-  position: relative; 
-}
-
-.menu__item h3 {
-  position: absolute; 
-  bottom: 16px; 
-  left: 16px;  
-  color: rgb(255, 255, 255); 
-  z-index: 1;
-}
-
-.menu__item::before { 
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); 
-  border-radius: 16px;
-  pointer-events: none;
-  z-index: 1;
-}
 
 
 
