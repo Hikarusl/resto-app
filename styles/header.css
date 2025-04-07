@@ -39,6 +39,10 @@
   height: 80px;
 }
 
+.header__logo-link {
+  color: rgba(28, 28, 28, 1);
+}
+
 .header__list {
   display: flex;
   column-gap: 24px;
