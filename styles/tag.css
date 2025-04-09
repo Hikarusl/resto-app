@@ -1,0 +1,23 @@
+.tag {
+  border-radius: 8px;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+}
+
+.tag--right {
+  margin-left: auto;
+}
+
+.tag--accent {
+  background-color: rgba(254, 221, 44, 1);
+  color: rgba(28, 28, 28, 1);
+}
+
+.tag--grey {
+  background-color: rgba(114, 114, 114, 1);
+}
