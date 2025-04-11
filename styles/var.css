@@ -1,0 +1,6 @@
+:root {
+  --transition-duration: 0.2s;
+
+  --color-link-default: rgba(85, 85, 85, 1);
+  --color-link-hover: rgba(28, 28, 28, 1);
+}

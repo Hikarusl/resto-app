@@ -14,6 +14,9 @@
   column-gap: 12px;
   align-items: center;
   height: 48px;
+
+  transition: all 0.3s ease-out;
+  overflow: hidden;
 }
 
 .header__bubble-button {
@@ -37,6 +40,7 @@
   color: #555555; 
   padding-block: 16px;
   height: 80px;
+
 }
 
 .header__logo-link {
@@ -93,5 +97,22 @@
   background-color: transparent;
   border: #1C1C1C solid 2px;
   color: #1C1C1C;
+}
+
+
+
+header a:hover{
+  color: var(--color-link-hover);
+  transition-duration: var(--transition-duration);
+}
+
+.header__button:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: var(--color-link-hover);
+}
+
+.button-transparent:hover {
+  background-color: #1C1C1C;
+  color: white;
 }
 

@@ -141,7 +141,7 @@
  /**
    Нормализация высоты элемента ссылки при его инспектировании в DevTools
   */
- a:where([class]) {
+ a {
   display: inline-flex;
   color: inherit;         /* Наследует цвет текста */
   font-family: inherit;   /* Наследует шрифт */
